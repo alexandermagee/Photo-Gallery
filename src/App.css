@@ -36,3 +36,32 @@
     transform: rotate(360deg);
   }
 }
+
+.displayHolder {
+  height: 300px;
+  width: auto;
+}
+
+.displayHolder img {
+  border: 2px solid black;
+}
+
+.selectionArea {
+  padding: 50px;
+}
+
+.selectionArea input {
+  border: 2px solid black;
+}
+
+.galleryTotal {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center
+}
+
+.galleryTotal button {
+  font-size: 2em;
+  cursor: pointer;
+}
