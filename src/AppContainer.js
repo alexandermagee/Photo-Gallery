@@ -7,15 +7,16 @@ export class AppContainer extends React.Component {
         super(props);
         this.state = {
             image1: "https://desenio.co.uk/bilder/artiklar/zoom/11329_1.jpg",
-            image2: "",
-            image3: ""
+            image2: "https://www.cityam.com/wp-content/uploads/2019/11/Centre-Point-view-2019-1280x720.jpg",
+            image3: "https://www.pictorem.com/collection/900_Melanie-Viola_18-00521.jpg"
         }
     }
 
-    updateImage = newURL => {
+    updateImage = (newURL,imageNumber) => {
         let newImage = newURL;
+        console.log(imageNumber);
         this.setState({
-            image1: newImage
+            [imageNumber] : newImage
         });
         console.log(this.state.image1)
     }
@@ -23,8 +24,10 @@ export class AppContainer extends React.Component {
     render(){
         return (
             <div>
-            <Selection updateImage={this.updateImage} image1={this.state.image1} />
+            <Selection updateImage={this.updateImage} />
             <Display image1={this.state.image1} />
+            <Display image1={this.state.image2} />
+            <Display image1={this.state.image3} />
             </div>
         )
     }
