@@ -21,11 +21,11 @@ export class Selection extends React.Component {
         return(
         <div className="selectionArea">
           <p>Image 1:</p>
-          <input type="text" placeholder="Please enter here..." onChange={this.handleChange} value={this.props.image1} id="image1" />
+          <input type="text" placeholder="Please enter here..." onChange={this.handleChange} value={this.props.image1} id={0} />
           <p>Image 2:</p> 
-          <input type="text" placeholder="Please enter here..." onChange={this.handleChange} value={this.props.image2} id="image2" />
+          <input type="text" placeholder="Please enter here..." onChange={this.handleChange} value={this.props.image2} id=/*"image2"*/{1} />
           <p>Image 3:</p>
-          <input type="text" placeholder="Please enter here..." onChange={this.handleChange} value={this.props.image3} id="image3" />  
+          <input type="text" placeholder="Please enter here..." onChange={this.handleChange} value={this.props.image3} id=/*"image2"*/{2} />  
         </div>
         );
     }
