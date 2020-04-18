@@ -2,6 +2,15 @@ import React from 'react';
 
 export class Selection extends React.Component {
 
+    constructor(props){
+        super(props);
+        this.state={}
+    }
+
+    componentDidMount() {
+        console.log(this.props.images)
+    }
+
     handleChange = e => {
         let imageNumber = e.target.id;
         let newURL = e.target.value;
