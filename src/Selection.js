@@ -7,10 +7,6 @@ export class Selection extends React.Component {
         this.state={}
     }
 
-    componentDidMount() {
-        console.log(this.props.images)
-    }
-
     handleChange = e => {
         let imageNumber = e.target.id;
         let newURL = e.target.value;
